@@ -1,4 +1,4 @@
-# 2-1 Semester Project #
+# 2-2 Semester Project #
 
 ** Technology **
 1. Java
