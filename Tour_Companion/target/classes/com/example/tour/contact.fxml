@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tour.ContactController">
+    <children>
+        <Text fill="#ff1414" layoutX="409.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Us" textAlignment="CENTER">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="38.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="89.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/saniul.jpg" />
+            </image>
+            <effect>
+                <ColorAdjust brightness="0.14" contrast="-0.06" />
+            </effect>
+        </ImageView>
+        <Text fill="#f21919" layoutX="101.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Md. Saniul Basir Saz">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#f21919" layoutX="55.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: saniul.cse.just@gmail.com">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#f21919" layoutX="110.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8801306032236">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="770.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/takbir.jpg" />
+            </image>
+            <effect>
+                <ColorAdjust brightness="0.14" contrast="-0.06" />
+            </effect>
+        </ImageView>
+        <Text fill="#f21919" layoutX="778.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sajid Hasan Takbir">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#f21919" layoutX="724.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: takbirhasan274@gmail.com">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#f21919" layoutX="784.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8801750006553">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="437.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/sadik.jpg" />
+            </image>
+            <effect>
+                <ColorAdjust brightness="0.14" contrast="-0.06" />
+            </effect>
+        </ImageView>
+        <Text fill="#f21919" layoutX="458.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sadik Mahmudd">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#f21919" layoutX="378.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: Sadikmahmudd1524@gmail.com">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#f21919" layoutX="454.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8801774651008">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="273.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/shahin.jpg" />
+            </image>
+            <effect>
+                <ColorAdjust brightness="0.14" contrast="-0.06" />
+            </effect>
+        </ImageView>
+        <Text fill="#f21919" layoutX="294.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shahin Hossain">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#f21919" layoutX="241.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: ss03379182@gmail.com">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#f21919" layoutX="290.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8801776303371">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="624.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/sweit.jpg" />
+            </image>
+            <effect>
+                <ColorAdjust brightness="0.14" contrast="-0.06" />
+            </effect>
+        </ImageView>
+        <Text fill="#f21919" layoutX="637.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Masud Rana Sweit">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#f21919" layoutX="608.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: sweit07@gmail.com">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#f21919" layoutX="641.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8801776303371">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+      <Button layoutX="50.0" layoutY="16.0" mnemonicParsing="false" onAction="#Back" prefHeight="44.0" prefWidth="86.0" style="-fx-background-color: red; -fx-background-radius: 50px;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_LEFT" layoutX="61.0" layoutY="44.0" size="20" />
+    </children>
+</AnchorPane>

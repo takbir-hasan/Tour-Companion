@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tour.LoginController">
+    <opaqueInsets>
+        <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+    </opaqueInsets>
+   <left>
+        <AnchorPane prefHeight="564.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="#e70c17" layoutX="434.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up">
+                    <font>
+                        <Font name="Berlin Sans FB" size="36.0" />
+                    </font>
+                </Text>
+                <Label layoutX="161.0" layoutY="329.0" text="Full Name:">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="162.0" layoutY="113.0" text="Username:">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernameField" alignment="CENTER" layoutX="143.0" layoutY="138.0" prefHeight="31.0" prefWidth="282.0" promptText="Enter Username" style="-fx-background-radius: 50px; -fx-border-color: red; -fx-border-radius: 50px;">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="fullName" alignment="CENTER" layoutX="143.0" layoutY="354.0" prefHeight="33.0" prefWidth="282.0" promptText="Enter Full Name" style="-fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: red;">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <Button layoutX="31.0" layoutY="17.0" mnemonicParsing="false" onAction="#back" prefHeight="36.0" prefWidth="77.0" style="-fx-background-radius: 25px; -fx-background-color: red;" text="Back" textFill="#efe8e9">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button layoutX="433.0" layoutY="577.0" mnemonicParsing="false" onAction="#signup" prefHeight="37.0" prefWidth="114.0" style="-fx-background-color: red; -fx-background-radius: 25px;" text="Sign up" textFill="#faf8f8">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Label layoutX="591.0" layoutY="104.0" prefHeight="30.0" prefWidth="51.0" text="Email:">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="email" alignment="CENTER" layoutX="560.0" layoutY="136.0" prefHeight="34.0" prefWidth="282.0" promptText="Enter Email" style="-fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: red;">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="164.0" layoutY="221.0" text="Password:">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="143.0" layoutY="248.0" prefHeight="34.0" prefWidth="282.0" promptText="Enter password" style="-fx-border-radius: 50px; -fx-background-radius: 50; -fx-border-color: red;">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </PasswordField>
+                <FontAwesomeIconView glyphName="USER_CIRCLE" layoutX="145.0" layoutY="347.0" size="15" text="" />
+                <FontAwesomeIconView glyphName="USER" layoutX="145.0" layoutY="132.0" size="15" text="" />
+                <FontAwesomeIconView glyphName="ENVELOPE" layoutX="568.0" layoutY="123.0" size="12" />
+                <FontAwesomeIconView glyphName="LOCK" layoutX="146.0" layoutY="239.0" size="15" />
+            <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_LEFT" layoutX="71.0" layoutY="66.0" size="18" />
+            <TextField fx:id="address" alignment="CENTER" layoutX="143.0" layoutY="470.0" prefHeight="33.0" prefWidth="282.0" promptText="Enter Address" style="-fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: red;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="163.0" layoutY="435.0" text="Present Address:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="MAP_MARKER" layoutX="146.0" layoutY="454.0" size="15" />
+            <Label fx:id="usernameLabel" layoutX="155.0" layoutY="170.0" prefHeight="30.0" prefWidth="258.0" textFill="#e11515" />
+            <Label fx:id="emailLabel" layoutX="572.0" layoutY="173.0" prefHeight="22.0" prefWidth="162.0" textFill="#e11515" />
+            <Label fx:id="passwordLabel" alignment="CENTER" layoutX="151.0" layoutY="282.0" prefHeight="30.0" prefWidth="252.0" textFill="#e11515" />
+            <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="592.0" layoutY="471.0" mnemonicParsing="false" onAction="#Browse" prefHeight="31.0" prefWidth="94.0" style="-fx-background-color: red;" text="  Browse" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="581.0" layoutY="220.0" text="Profile Picture">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="CAMERA" layoutX="562.0" layoutY="237.0" />
+            <ImageView fx:id="imgView" fitHeight="150.0" fitWidth="200.0" layoutX="566.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../profile.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIconView fill="WHITE" glyphName="FOLDER_OPEN" layoutX="604.0" layoutY="491.0" />
+            <Label layoutX="716.0" layoutY="222.0" text="(Optional)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_LEFT" layoutX="38.0" layoutY="41.0" size="18" />
+            <Label fx:id="pictureLabel" alignment="CENTER" layoutX="574.0" layoutY="426.0" prefHeight="18.0" prefWidth="130.0" textFill="#152eb9" />
+            </children>
+        </AnchorPane>
+   </left>
+</BorderPane>

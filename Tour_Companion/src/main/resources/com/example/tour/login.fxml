@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" prefHeight="605.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tour.LoginController">
+    <children>
+        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1024.0">
+            <left>
+                <AnchorPane prefHeight="650.0" prefWidth="496.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                    <children>
+                        <GridPane layoutX="55.0" layoutY="220.0" prefHeight="174.0" prefWidth="361.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.20001220703125" minWidth="10.0" prefWidth="119.19999694824219" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.8000030517578" minWidth="10.0" prefWidth="208.8000030517578" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="116.79999389648438" minHeight="10.0" prefHeight="100.79999389648438" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="49.60001220703124" minHeight="9.00000610351563" prefHeight="25.00000610351563" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Username:" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="17.0" />
+                                    </font>
+                                    <GridPane.margin>
+                                        <Insets left="35.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="Password" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="System Bold" size="17.0" />
+                                    </font>
+                                    <GridPane.margin>
+                                        <Insets left="35.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <TextField fx:id="usernameField" promptText="Enter username" style="-fx-background-radius: 50px; -fx-border-color: red; -fx-border-radius: 50px;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                </TextField>
+                                <PasswordField fx:id="passwordField" prefWidth="146.0" promptText="Enter password" style="-fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                </PasswordField>
+                                <Label text="Login" textFill="RED" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="25.0" />
+                                    </font>
+                                </Label>
+                                <FontAwesomeIconView glyphName="USER" size="15" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="10.0" />
+                                    </GridPane.margin>
+                                </FontAwesomeIconView>
+                                <FontAwesomeIconView glyphName="LOCK" size="15" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets left="10.0" />
+                                    </GridPane.margin>
+                                </FontAwesomeIconView>
+                            </children>
+                        </GridPane>
+                        <Button fx:id="Login" layoutX="197.0" layoutY="445.0" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="74.0" style="-fx-background-color: red; -fx-background-radius: 50px;" text="Login" textFill="WHITE" />
+                        <Hyperlink fx:id="Create" layoutX="163.0" layoutY="515.0" onAction="#create" text="Create a new account" textFill="RED">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Hyperlink>
+                        <Label layoutX="149.0" layoutY="14.0" prefHeight="86.0" prefWidth="268.0" style="-fx-text-fill: #DC143C;" text="Tour Companion" textFill="BLUE">
+                            <font>
+                                <Font name="SansSerif Bold" size="32.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="79.0" layoutY="100.0" prefHeight="54.0" prefWidth="394.0" text="Welcome ! we are here to make your journey easier" textFill="#a43287">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                  <Label fx:id="loginActionMessage" layoutX="192.0" layoutY="410.0" prefHeight="26.0" prefWidth="130.0" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </AnchorPane>
+            </left>
+            <right>
+                <AnchorPane prefHeight="650.0" prefWidth="528.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="152.0" fitWidth="169.0" layoutX="35.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="314.0">
+                            <image>
+                                <Image url="@../../../images/sajek.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="152.0" fitWidth="169.0" layoutX="287.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="287.0" AnchorPane.rightAnchor="86.39999999999998">
+                            <image>
+                                <Image url="@../../../images/falls.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="152.0" fitWidth="169.0" layoutX="35.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="320.0">
+                            <image>
+                                <Image url="@../../../images/river.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="152.0" fitWidth="169.0" layoutX="35.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="327.0">
+                            <image>
+                                <Image url="@../../../images/tea.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="152.0" fitWidth="169.0" layoutX="287.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="293.0" AnchorPane.rightAnchor="73.0">
+                            <image>
+                                <Image url="@../../../images/town.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="152.0" fitWidth="169.0" layoutX="287.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="71.0">
+                            <image>
+                                <Image url="@../../../images/sea.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </right>
+        </BorderPane>
+    </children>
+</VBox>
